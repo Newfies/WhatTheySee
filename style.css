@@ -46,3 +46,8 @@ body {
 .headingA {
     font-size: 1.5rem;
 }
+
+.descA {
+    font-size: 0.5rem;
+    margin-bottom: 5%;
+}
