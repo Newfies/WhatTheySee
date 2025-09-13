@@ -7,3 +7,42 @@ body {
     background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.intro-wrapper {
+    position: relative;
+    width: 50%; /* match the width of the .intro you want */
+    margin: 2.5% auto;
+}
+
+.intro-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -3px;   /* border thickness */
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 8px; /* slightly bigger than .intro's radius */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    z-index: -1;
+}
+
+.intro {
+    text-align: center;
+    width: 100%; /* fill the wrapper */
+    padding: 12px; /* smaller padding for inner content */
+    background-color: #121212;
+    border-radius: 6px; /* matches the inner box */
+    color: white;
+}
+
+.btn {
+    background-color: #44bb34;
+    padding: 1% 2%;
+    border: 0.5px solid white;
+    border-radius: 6px;
+    background: linear-gradient(to right, #3b00b3, #7224b5);
+}
+
+.headingA {
+    font-size: 1.5rem;
+}
